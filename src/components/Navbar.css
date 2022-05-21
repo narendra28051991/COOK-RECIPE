@@ -1,0 +1,34 @@
+.navbar {
+    background: purple;
+    padding: 20px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    color: rgb(241, 250, 250);
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(241, 250, 250);
+}
+
+.navbar a.home-link {
+    margin-right: auto;
+}
+
+.navbar a:last-child {
+    margin-left: 40px;
+    padding: 8px;
+    border: 1px solid rgb(241, 250, 250);
+    border-radius: 4px;
+}
+
+.navbar a:last-child:hover {
+    cursor: pointer;
+    color: purple;
+    background: rgb(241, 250, 250);
+}

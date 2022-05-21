@@ -1,0 +1,40 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Butter Chicken",
+      "ingredients": [
+        "1 chicken",
+        "2 onions",
+        "3 chilli",
+        "4 garlic"
+      ],
+      "method": "1. If you are looking for a dairy free substitute that is equally rich and creamy, try substituting coconut milk for the heavy cream. 2. Do not toss out the butter: it makes the sauce nice and glossy, and gives the chicken a gorgeous flavor. 3. You can make butter chicken without marinating the chicken first (simply brown the chicken in the pan with the spices and onions), but time in a marinade will get you closer to the succulent meat of the authentic butter chicken recipe. 4. No tandoor oven or any other special equipment is required: you can absolutely cook butter chicken using the regular pots and pans you have on hand.",
+      "cookingTime": "45 minutes"
+    },
+    {
+      "id": "2",
+      "title": "Fish Curry",
+      "ingredients": [
+        "1 fish",
+        "2 turmeric",
+        "3 onions",
+        "4 tamarind"
+      ],
+      "method": "1. Preheat slow cooker to sauté and add 2 tbsp of coconut oil. 2. Add 8-10 curry leaves, and allow to simmer for 30 seconds until aromatic. 3. Add 1 cup finely chopped onion, 1 tbsp minced garlic cloves, 1 tbsp minced ginger, and ½-1 whole sliced green chili, depending on heat preference. 4. Cook until onions are translucent. 5. Add 1 cup chopped tomato, stirring until liquid is released and they have begun to break down.",
+      "cookingTime": "30 minutes"
+    },
+    {
+      "id": "3",
+      "title": "Meat Masala",
+      "ingredients": [
+        "1 lamb",
+        "2 ginger",
+        "3 cloves",
+        "4 chilli"
+      ],
+      "method": "1. To make lamb vindaloo, swap the chicken for four lamb shanks. 2. Brown the shanks as directed in the pot. 3. Increase cooking time to 3 hours on low heat. 4. When lamb is tender and falling apart in the sauce.",
+      "cookingTime": "55 minutes"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+.recipelist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    grid-gap: 40px;
+    margin: 40px auto;
+}
+
+.recipelist .card {
+    background: rgb(241, 250, 250);
+    color: purple;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.recipelist .card h3 {
+    margin-bottom: 6px;
+    color: rgb(75, 56, 75);
+}
+
+.recipelist .card p {
+    font-size: 0.9em;
+    color: rgb(170, 110, 170);
+}
+
+.recipelist .card div {
+    font-size: 0.7em;
+    color: rgb(75, 56, 75);
+    margin: 20px 0;
+    line-height: 1.5em;
+}
+
+.recipelist .card a {
+    margin: 0px auto;
+    padding: 5px;
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(170, 110, 170);
+    color: rgb(241, 250, 250);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.recipelist .card:hover {
+    transform: rotate(3deg);
+}
+
+.recipelist .card.dark {
+    background: rgb(88, 84, 84);
+}
+
+.recipelist .card.dark h3,
+.recipelist .card.dark p,
+.recipelist .card.dark a,
+.recipelist .card.dark div {
+    color: rgb(198, 204, 204);
+}
+
+.recipelist .card.dark a {
+    background: rgb(56, 53, 53);
+}
