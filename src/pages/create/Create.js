@@ -1,8 +1,9 @@
-import { useEffect ,useRef, useState } from 'react'
-import './Create.css'
+import { useEffect, useRef, useState } from 'react'
 import { useFetch } from '../../hooks/useFetch'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useTheme } from '../../hooks/useTheme'
+
+import './Create.css'
 
 export default function Create() {
   const [title, setTitle] = useState('')
@@ -11,7 +12,7 @@ export default function Create() {
   const [method, setMethod] = useState('')
   const [cookingTime, setCookingTime] = useState('')
   const ingredientInput = useRef(null)
-  const history = useHistory()
+  const navigate = useNavigate()
 
   const { data, postData } = useFetch('http://localhost:3000/recipes', 'POST')
   
@@ -34,9 +35,9 @@ export default function Create() {
 
   useEffect(() => {
     if (data) {
-      history.push("/")
+      navigate("/")
     }
-  }, [data, history])
+  }, [data, navigate])
 
   return (
     <div className={ `create ${ mode }` }>

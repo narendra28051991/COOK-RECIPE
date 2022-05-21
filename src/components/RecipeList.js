@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTheme } from '../hooks/useTheme'
+
 import './RecipeList.css'
 
 export default function RecipeList({ recipes }) {
