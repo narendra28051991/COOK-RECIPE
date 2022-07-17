@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { useFetch } from '../../hooks/useFetch'
 import { useNavigate } from 'react-router-dom'
-import { useTheme } from '../../hooks/useTheme'
 
+//styles
 import './Create.css'
 
 export default function Create() {
@@ -24,6 +24,7 @@ export default function Create() {
   const addEvent = (e) => {
     e.preventDefault()
     const ing = newIngredient.trim()
+
     if (ing && !ingredients.includes(ing)) {
       setIngredients(prevIngredient => [...prevIngredient, ing])
     }
@@ -31,8 +32,7 @@ export default function Create() {
     ingredientInput.current.focus()
   }
 
-  const { mode } = useTheme()
-
+  // redirect the user when we get data response
   useEffect(() => {
     if (data) {
       navigate("/")
@@ -40,9 +40,10 @@ export default function Create() {
   }, [data, navigate])
 
   return (
-    <div className={ `create ${ mode }` }>
+    <div className="create">
       <h2 className="page-title">Create a New Recipe</h2>
       <form onSubmit={handleSubmit}>
+
         <label>
           <span>Title: </span>
           <input
@@ -55,14 +56,14 @@ export default function Create() {
         
         <label>
           <span>Ingredients: </span>
-          <div>
+          <div className="ingredients">
             <input
               type="text"
               onChange={(e) => setNewIngredient(e.target.value)}
               value={ newIngredient }
               ref={ingredientInput}
             ></input>
-            <button className="button" onClick={addEvent}>Add</button>
+            <button className="btn" onClick={addEvent}>Add</button>
           </div>
         </label>
         <p>Current Ingredients: { ingredients.map(i => (<em key={ i }>{ i }, </em> )) }</p>
@@ -86,7 +87,7 @@ export default function Create() {
           ></input>
         </label>
         
-        <button className="button">Submit</button>
+        <button className="btn">Submit</button>
       </form>
     </div>
   )

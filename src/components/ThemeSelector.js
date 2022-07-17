@@ -1,8 +1,10 @@
-import './ThemeSelector.css'
 import { useTheme } from '../hooks/useTheme'
 import modeIcon from '../assets/mode-icon.svg'
 
-const themeColours = ['purple', 'maroon', 'crimson', 'rgb(88, 84, 84)']
+//styles
+import './ThemeSelector.css'
+
+const themeColours = ['#58249c', '#249c6b', '#b70233']
 
 export default function ThemeSelector() {
 
@@ -12,6 +14,7 @@ export default function ThemeSelector() {
         changeMode(mode === 'dark' ? 'light' : 'dark')
     }
     console.log(mode)
+    
     return (
         <div className="themeselector">
             <div className="modeselector">

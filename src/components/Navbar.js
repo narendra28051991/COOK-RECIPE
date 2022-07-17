@@ -3,6 +3,7 @@ import { useTheme } from '../hooks/useTheme'
 
 import SearchBar from './SearchBar'
 
+//styles
 import './Navbar.css'
 
 export default function Navbar() {
@@ -11,7 +12,7 @@ export default function Navbar() {
   return (
     <div className="navbar" style={{ background: color }}>
       <nav>
-        <Link to="/" className="home-link">Home</Link>
+        <Link to="/" className="brand">Recipes</Link>
         <SearchBar />
         <Link to="/create">Create</Link>
       </nav>

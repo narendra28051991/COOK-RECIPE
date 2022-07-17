@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useTheme } from './hooks/useTheme';
 
-// components
+// page components
 import Home from './pages/home/Home';
 import Create from './pages/create/Create';
 import Recipe from './pages/recipe/Recipe';
